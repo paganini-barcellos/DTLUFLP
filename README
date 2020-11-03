@@ -1,0 +1,51 @@
+Instructions:
+
+1- Two instance sets are available in the "data" folder
+
+2- Single and Multi assignment codes are available in "src" folder.
+
+3- To use codes:
+  - ./exec "instance_name".txt "parameters"
+
+  - parameters: Sequence of attributes by code:
+	- "DMA-Benders-CPLEX.cpp": CPLEX solver: (0 Without Benders; 1 Annotation; 2 FULL); 
+                               Formulation Type (1 to M formulation; 2 to Mỹz formulation).
+                               
+	- "DSA-Benders-CPLEX.cpp": CPLEX solver: (0 Without Benders; 1 Annotation; 2 FULL); 
+                               Formulation Type (1 to S formulation; 2 to Sỹ formulation; 3 to Sỹza formulation; 4 to Sỹzb formulation).
+                               
+	- "DMA-complete.cpp": Formulation Type (1 to M formulation; 2 to Mỹz formulation); 
+                          SetPriorities (1 Yes; 2 No); 
+                          Heuristic cuts (1 Yes; 2 No); 
+                          Heuristic cut type (0 None; 1 OF cut; 2 Inspection Benders cuts; 3  Both 1 and 2); 
+                          Where I'll start B&B? (0 CLEX defaut; 1 heuristic solution)
+                          Warm Start? (0 No; 1 Yes); 
+                          Number of warm start iterations; 
+                          Warm start until LR? (0 No; 1 Yes); 
+                          Cutcallback? (0 No; 1 Yes);
+                          Number of Cutcallback iterations (-1 defaut to insert all of them);
+                          Inspection cuts? (0 No; 1 Yes);
+                          Closing facility cuts? (0 No; 1 Yes);
+                          Papadakos cuts? (0 No; 1 Yes); 
+                          Magnanti Wong cuts? (0 No; 1 Yes); 
+                          Closing facility JVC cuts? (0 No; 1 Yes);
+                          Inspection JVC cuts? (0 No; 1 Yes);
+                          Magnanti Wong Network flow cuts? (0 No; 1 Yes).
+                          
+	- "DSA-complete.cpp": Formulation Type (1 to S formulation; 2 to Sỹ formulation; 3 to Sỹza formulation; 4 to Sỹzb formulation); 
+                          SetPriorities (1 Yes; 2 No); 
+                          Heuristic cuts (1 Yes; 2 No); 
+                          Heuristic cut type (0 None; 1 OF cut; 2 Inspection Benders cuts; 3  Both 1 and 2); 
+                          Where I'll start B&B? (0 CLEX defaut; 1 heuristic solution)
+                          Warm Start? (0 No; 1 Yes); 
+                          Number of warm start iterations; 
+                          Warm start until LR? (0 No; 1 Yes); 
+                          Cutcallback? (0 No; 1 Yes);
+                          Number of Cutcallback iterations (-1 defaut to insert all of them);
+                          Inspection cuts? (0 No; 1 Yes);
+                          Closing facility cuts? (0 No; 1 Yes);
+                          Papadakos cuts? (0 No; 1 Yes); 
+                          Magnanti Wong cuts? (0 No; 1 Yes); 
+                          Magnanti Wong Network flow cuts? (0 No; 1 Yes).
+
+4- The results will be saved in two different files. 
